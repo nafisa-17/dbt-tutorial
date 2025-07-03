@@ -1,0 +1,14 @@
+jaffle_shop:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: service-account
+      keyfile: /Users/nt/.dbt/dbt-practing-project-a8c98014dbee.json
+      project: dbt-practing-project
+      dataset: dbt_nana
+      threads: 1
+      timeout_seconds: 300
+      location: US
+      priority: interactive
+
